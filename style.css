@@ -1,16 +1,47 @@
-:root {
+html {
     background-color:black;
-    --primary-color:rgb(179, 39, 58);
+    --header-height: 40px;
+    --header-width: 100vw;
 }
+
 body{
-    --primary-color:rgb(47, 172, 74);
+    margin:0;
+    
 }
+
+html[data-theme="light"] {
+    --primary-color: rgb(47, 172, 74);
+}
+
+html[data-theme="dark"] {
+    --primary-color: rgb(136, 32, 32);
+}
+
 h1 {
     color: var(--primary-color);
 }
+
 p {
     color: var(--primary-color);
 }
+
 h2 {
     color: var(--primary-color);
+}
+header {
+    width: var(--header-width);
+    height: var(--header-height);
+    background-color:var(--primary-color);
+    position:fixed;
+    z-index:2;
+    top:0;
+}
+
+main{
+    margin-top:var(--header-height);
+}
+
+input {
+    height:35px;
+    width:var(--header-height);
 }
