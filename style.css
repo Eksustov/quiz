@@ -6,15 +6,14 @@ html {
 
 body{
     margin:0;
-    
 }
 
 html[data-theme="light"] {
-    --primary-color: rgb(47, 172, 74);
+    --primary-color: rgb(53, 228, 91);
 }
 
 html[data-theme="dark"] {
-    --primary-color: rgb(136, 32, 32);
+    --primary-color: rgb(121, 32, 32);
 }
 
 h1 {
